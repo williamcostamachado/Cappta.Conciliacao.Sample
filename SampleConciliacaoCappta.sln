@@ -5,6 +5,18 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConciliacaoCappta", "SampleConciliacaoCappta\SampleConciliacaoCappta.csproj", "{D1ABAF6D-4757-4825-9BB1-B45EE068FE74}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Infrastructure", "1-Infrastructure", "{453EFF66-23E2-415A-9965-2EC27B969703}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Aplication", "2-Aplication", "{CA8C9B63-B4F0-423B-831F-1DC3FE0AD4B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Domain.Model", "0-Domain.Model", "{EAB6D945-10CA-4A8F-84EF-BD6C6820355B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Apresentation", "3-Apresentation", "{F67F611A-3021-4387-994E-4E3FCA5EA83F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cappta.GP.API.Conciliacao.Domain.Model", "Cappta.GP.API.Conciliacao\Cappta.GP.API.Conciliacao.Domain.Model.csproj", "{E7838A31-1EC9-4704-8195-8C493B71F204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cappta.Gp.APi.Conciliacao.Infrastructure", "Cappta.Gp.APi.Conciliacao.Infrastructure\Cappta.Gp.APi.Conciliacao.Infrastructure.csproj", "{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +27,23 @@ Global
 		{D1ABAF6D-4757-4825-9BB1-B45EE068FE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1ABAF6D-4757-4825-9BB1-B45EE068FE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1ABAF6D-4757-4825-9BB1-B45EE068FE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7838A31-1EC9-4704-8195-8C493B71F204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7838A31-1EC9-4704-8195-8C493B71F204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7838A31-1EC9-4704-8195-8C493B71F204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7838A31-1EC9-4704-8195-8C493B71F204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7838A31-1EC9-4704-8195-8C493B71F204} = {EAB6D945-10CA-4A8F-84EF-BD6C6820355B}
+		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1} = {453EFF66-23E2-415A-9965-2EC27B969703}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5B59F7F-DFD6-4AD1-B87B-A0BA9B907F5F}
 	EndGlobalSection
 EndGlobal

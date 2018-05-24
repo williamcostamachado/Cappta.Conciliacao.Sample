@@ -1,0 +1,7 @@
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.Domain.Model.csprojResolveAssemblyReference.cache
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Cappta.GP.API.Conciliacao.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Cappta.GP.API.Conciliacao.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.pdb

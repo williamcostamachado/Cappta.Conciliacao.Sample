@@ -2,62 +2,38 @@
 using System.Windows.Forms;
 using QuickType;
 
+
 namespace SampleConciliacaoCappta
 {
     public partial class ConciliationForm : Form
-    { 
+    {
         public ConciliationForm()
         {
             InitializeComponent();
         }
 
         private void Search(object sender, EventArgs e)
-        {  
-            var cnpj = comboBoxCNPJ.SelectedItem.ToString();
-          
-            if(radioButtonNsu.Checked == true & radioButtonData.Checked == false)
-            {
-                var nsu = textBoxNsu.Text;
-                if (String.IsNullOrEmpty(nsu)) { InvalidarAutenticacao(); }
+        {
+            var sales = this.CreateFilter(InstallmentType.Sales);
+            if (sales.IsValid() == false) { InvalidarAutenticacao(); }
 
-                var salesResearch = new SalesSearch();
-                var sales = new Sales()
-                {
-                    cnpj = cnpj,
-                    url = "https://conciliacao-api.cappta.com.br/api/v1/",
-                    nsu = textBoxNsu.Text,
-                    finalDate = textBoxFinal.Text,
-                    initialDate = textBoxDatInicio.Text
-                };
+            var salesResearch = new SearchTransaction("https://conciliacao-api.cappta.com.br/api/v1/");
 
-                var response = salesResearch.Nsu(sales).Execute(RequestAuthentication.Open());
-                var responseContent = response.Content;
-                
-                dataGridViewResultado.DataSource = CapptaReplySales.FromJson(responseContent);
-            }
-            if (radioButtonNsu.Checked == false & radioButtonData.Checked == true)
-            {
-                var dataInicio = textBoxDatInicio.Text;
-                if (String.IsNullOrEmpty(dataInicio)) { InvalidarAutenticacao(); }
+            var response = salesResearch.Search(sales).Execute(RequestAuthentication.Open());
+            var responseContent = response.Content;
 
-                var dataFinal = textBoxFinal.Text;
-                if (String.IsNullOrEmpty(dataFinal)) { InvalidarAutenticacao(); }
+            dataGridViewResultado.DataSource = CapptaReplySales.FromJson(responseContent);
+        }
 
-                var salesResearch = new SalesSearch();
-                var sales = new Sales()
-                {
-                    cnpj = cnpj,
-                    url = "https://conciliacao-api.cappta.com.br/api/v1/",
-                    nsu = textBoxNsu.Text,
-                    finalDate = textBoxFinal.Text,
-                    initialDate = textBoxDatInicio.Text
-                };
-                var response = salesResearch.Date(sales).Execute(RequestAuthentication.Open());
-                var responseContent = response.Content;
+        private TransactionFilter CreateFilter(InstallmentType type)
+        {
+            var sales = new TransactionFilter(InstallmentType.Sales);// isso aqui tem que virar uma linha. Como popular este objeto?
+            sales.Cnpj = comboBoxCNPJ.SelectedItem.ToString();
+            sales.Nsu = textBoxNsu.Text;
+            sales.FinalDate = textBoxFinal.Text;
+            sales.InitialDate = textBoxDatInicio.Text;
 
-                dataGridViewResultado.DataSource = CapptaReplySales.FromJson(responseContent);
-            }
-        
+            return sales;
         }
 
         private void InvalidarAutenticacao()
@@ -71,13 +47,13 @@ namespace SampleConciliacaoCappta
         }
 
         private void OnradioButtonNsu_CheckedChanged(object sender, EventArgs e)
-        { 
+        {
             this.panelPeriodo.Hide();
             this.panelNsu.Show();
         }
 
         private void OnradioButtonData_CheckedChanged(object sender, EventArgs e)
-        {         
+        {
             this.panelNsu.Hide();
             this.panelPeriodo.Show();
         }

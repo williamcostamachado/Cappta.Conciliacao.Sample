@@ -1,0 +1,7 @@
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\RestSharp.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\RestSharp.xml
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.csprojResolveAssemblyReference.cache
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.pdb
