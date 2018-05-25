@@ -1,0 +1,11 @@
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.Gp.Api.Conciliacao.Aplication.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.Gp.Api.Conciliacao.Aplication.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Newtonsoft.Json.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\obj\Debug\Cappta.Gp.Api.Conciliacao.Aplication.csprojResolveAssemblyReference.cache
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\obj\Debug\Cappta.Gp.Api.Conciliacao.Aplication.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\obj\Debug\Cappta.Gp.Api.Conciliacao.Aplication.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.GP.API.Conciliacao.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.GP.API.Conciliacao.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\RestSharp.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\RestSharp.xml

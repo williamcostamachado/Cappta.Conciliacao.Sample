@@ -1,14 +1,15 @@
 ﻿using RestSharp;
+using SampleConciliacaoCappta;
 
-namespace SampleConciliacaoCappta
+namespace Cappta.Gp.Api.Conciliacao.Aplication
 {
     public class SearchTransaction
     {
         private string url;
 
-        public SearchTransaction(string url)
+        public SearchTransaction()
         {
-            this.url = url;
+            this.url = "https://conciliacao-api.cappta.com.br/api/v1/";
         }
 
         public RestClient Search(TransactionFilter request)

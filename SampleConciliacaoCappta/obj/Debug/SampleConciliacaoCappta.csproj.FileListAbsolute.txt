@@ -45,3 +45,5 @@ C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\Cappta.GP.
 C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.dll
 C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.pdb
 C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\RestSharp.xml
+C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\Cappta.Gp.Api.Conciliacao.Aplication.dll
+C:\GitHub\Cappta.Conciliacao.Sample\SampleConciliacaoCappta\bin\Debug\Cappta.Gp.Api.Conciliacao.Aplication.pdb

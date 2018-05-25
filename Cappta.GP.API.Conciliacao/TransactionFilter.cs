@@ -35,7 +35,7 @@ namespace SampleConciliacaoCappta
             return String.IsNullOrWhiteSpace(this.Nsu) == false || this.Nsu.Length == 6;
         }
 
-        private bool IsValidDateTime(string stringfiedDate)
+        private bool IsValidDateTime(string stringFiedDate)
         {
             DateTime convertedDate;
             return DateTime.TryParse(this.InitialDate, out convertedDate);

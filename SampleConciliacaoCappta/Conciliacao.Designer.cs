@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageVendas = new System.Windows.Forms.TabPage();
+            this.Resultado = new System.Windows.Forms.TextBox();
             this.head = new System.Windows.Forms.Panel();
             this.buttonPesquisa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -87,6 +88,7 @@
             // 
             this.tabPageVendas.BackColor = System.Drawing.SystemColors.Window;
             this.tabPageVendas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPageVendas.Controls.Add(this.Resultado);
             this.tabPageVendas.Controls.Add(this.head);
             this.tabPageVendas.Controls.Add(this.dataGridViewResultado);
             this.tabPageVendas.Location = new System.Drawing.Point(4, 22);
@@ -95,6 +97,14 @@
             this.tabPageVendas.Size = new System.Drawing.Size(1383, 665);
             this.tabPageVendas.TabIndex = 0;
             this.tabPageVendas.Text = "Vendas";
+            // 
+            // Resultado
+            // 
+            this.Resultado.Location = new System.Drawing.Point(1039, 85);
+            this.Resultado.Multiline = true;
+            this.Resultado.Name = "Resultado";
+            this.Resultado.Size = new System.Drawing.Size(334, 570);
+            this.Resultado.TabIndex = 2;
             // 
             // head
             // 
@@ -273,7 +283,7 @@
             this.dataGridViewResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewResultado.Location = new System.Drawing.Point(6, 85);
             this.dataGridViewResultado.Name = "dataGridViewResultado";
-            this.dataGridViewResultado.Size = new System.Drawing.Size(1367, 570);
+            this.dataGridViewResultado.Size = new System.Drawing.Size(1027, 570);
             this.dataGridViewResultado.TabIndex = 1;
             // 
             // tabPageParcelas
@@ -297,17 +307,19 @@
             this.pesquisar.TabIndex = 7;
             this.pesquisar.TabStop = false;
             // 
-            // Conciliacao
+            // ConciliationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 701);
             this.Controls.Add(this.panel1);
-            this.Name = "Conciliacao";
+            this.Name = "ConciliationForm";
             this.Text = "Conciliação Cappta ";
+            this.Load += new System.EventHandler(this.ConciliationForm_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.tabPageVendas.ResumeLayout(false);
+            this.tabPageVendas.PerformLayout();
             this.head.ResumeLayout(false);
             this.head.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -347,6 +359,7 @@
         private System.Windows.Forms.RadioButton radioButtonData;
         private System.Windows.Forms.RadioButton radioButtonNsu;
         private System.Windows.Forms.Label labelFiltro;
+        private System.Windows.Forms.TextBox Resultado;
     }
 }
 

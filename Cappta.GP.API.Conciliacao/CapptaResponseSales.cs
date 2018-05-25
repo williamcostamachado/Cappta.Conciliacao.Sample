@@ -2,7 +2,7 @@
 {
     using Newtonsoft.Json;
 
-    public partial class CapptaReplySales
+    public partial class CapptaResponseSales
     {
        [JsonProperty("EstimatedGrossAmount")]
         public double? EstimatedGrossAmount { get; set; }
@@ -56,10 +56,4 @@
         public string UpdateDate { get; set; }
 
     }
-
-    public partial class CapptaReplySales
-    {
-        public static CapptaReplySales[] FromJson(string json) => JsonConvert.DeserializeObject<CapptaReplySales[]>(json);
-    }
-  
 }

@@ -70,10 +70,5 @@
         [JsonProperty("updateDate")]
         public string UpdateDate { get; set; }
     }
-    //n]ão é uma boa ideia
-    public partial class CapptaReplyReceiptis
-    {
-        public static CapptaReplyReceiptis[] FromJson(string json) => JsonConvert.DeserializeObject<CapptaReplyReceiptis[]>(json);
-    }
 }
 

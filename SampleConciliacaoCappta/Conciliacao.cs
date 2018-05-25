@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using QuickType;
+using Cappta.Gp.Api.Conciliacao.Aplication;
 
 
 namespace SampleConciliacaoCappta
@@ -14,26 +14,24 @@ namespace SampleConciliacaoCappta
 
         private void Search(object sender, EventArgs e)
         {
-            var sales = this.CreateFilter(InstallmentType.Sales);
-            if (sales.IsValid() == false) { InvalidarAutenticacao(); }
+            var filter = this.CreateFilter(InstallmentType.Sales);
+            if (filter.IsValid() == false) { InvalidarAutenticacao(); }
 
-            var salesResearch = new SearchTransaction("https://conciliacao-api.cappta.com.br/api/v1/");
-
-            var response = salesResearch.Search(sales).Execute(RequestAuthentication.Open());
-            var responseContent = response.Content;
-
-            dataGridViewResultado.DataSource = CapptaReplySales.FromJson(responseContent);
+            var searchTransaction = new SearchTransaction();
+            var response = searchTransaction.Search(filter).Execute(RequestAuthentication.Open());
+            dataGridViewResultado.DataSource = CapptaSalesResponse.Get.FromJson(response.Content);
+ 
         }
 
         private TransactionFilter CreateFilter(InstallmentType type)
         {
-            var sales = new TransactionFilter(InstallmentType.Sales);// isso aqui tem que virar uma linha. Como popular este objeto?
-            sales.Cnpj = comboBoxCNPJ.SelectedItem.ToString();
-            sales.Nsu = textBoxNsu.Text;
-            sales.FinalDate = textBoxFinal.Text;
-            sales.InitialDate = textBoxDatInicio.Text;
+            var transactionFilter = new TransactionFilter(InstallmentType.Sales);// isso aqui tem que virar uma linha. Como popular este objeto?
+            transactionFilter.Cnpj = comboBoxCNPJ.SelectedItem.ToString();
+            transactionFilter.Nsu = textBoxNsu.Text;
+            transactionFilter.FinalDate = textBoxFinal.Text;
+            transactionFilter.InitialDate = textBoxDatInicio.Text;
 
-            return sales;
+            return transactionFilter;
         }
 
         private void InvalidarAutenticacao()
@@ -56,6 +54,11 @@ namespace SampleConciliacaoCappta
         {
             this.panelNsu.Hide();
             this.panelPeriodo.Show();
+        }
+
+        private void ConciliationForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
