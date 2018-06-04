@@ -2,7 +2,7 @@
 {
     using Newtonsoft.Json;
 
-    public partial class CapptaResponseSales
+    public partial class ResponseSales
     {
        [JsonProperty("EstimatedGrossAmount")]
         public double? EstimatedGrossAmount { get; set; }

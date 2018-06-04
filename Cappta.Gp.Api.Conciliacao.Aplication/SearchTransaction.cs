@@ -3,13 +3,13 @@ using SampleConciliacaoCappta;
 
 namespace Cappta.Gp.Api.Conciliacao.Aplication
 {
-    public class SearchTransaction
+    public class SearchTransaction 
     {
         private string url;
-
+        
         public SearchTransaction()
         {
-            this.url = "https://conciliacao-api.cappta.com.br/api/v1/";
+            this.url = "https://conciliacao-api.cappta.com.br/api/v1/";       
         }
 
         public RestClient Search(TransactionFilter request)
@@ -18,6 +18,6 @@ namespace Cappta.Gp.Api.Conciliacao.Aplication
 
             var restClient = new RestClient(searchUrl);
             return restClient;
-        }
+        } 
     }
 }

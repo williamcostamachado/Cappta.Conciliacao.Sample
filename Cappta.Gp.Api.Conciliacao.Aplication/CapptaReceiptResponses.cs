@@ -1,12 +1,13 @@
 ﻿using Newtonsoft.Json;
+using QuickType;
 
 namespace Cappta.Gp.Api.Conciliacao.Aplication
 {
-    class CapptaReceiptResponse
+    public class CapptaReceiptResponse
     {
-        public partial class CapptaReplyReceiptis
+        public partial class Get
         {
-            public static CapptaReplyReceiptis[] FromJson(string json) => JsonConvert.DeserializeObject<CapptaReplyReceiptis[]>(json);
+            public static ResponseReceipts[] FromJson(string json) => JsonConvert.DeserializeObject<ResponseReceipts[]>(json);
         }
     }
 }

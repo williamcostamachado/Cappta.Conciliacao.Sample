@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConciliacaoCappta", "SampleConciliacaoCappta\SampleConciliacaoCappta.csproj", "{D1ABAF6D-4757-4825-9BB1-B45EE068FE74}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Aplication", "2-Aplicatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0-Domain.Model", "0-Domain.Model", "{EAB6D945-10CA-4A8F-84EF-BD6C6820355B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Apresentation", "3-Apresentation", "{F67F611A-3021-4387-994E-4E3FCA5EA83F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Presentation", "3-Presentation", "{F67F611A-3021-4387-994E-4E3FCA5EA83F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cappta.GP.API.Conciliacao.Domain.Model", "Cappta.GP.API.Conciliacao\Cappta.GP.API.Conciliacao.Domain.Model.csproj", "{E7838A31-1EC9-4704-8195-8C493B71F204}"
 EndProject
@@ -46,6 +46,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{D1ABAF6D-4757-4825-9BB1-B45EE068FE74} = {F67F611A-3021-4387-994E-4E3FCA5EA83F}
 		{E7838A31-1EC9-4704-8195-8C493B71F204} = {EAB6D945-10CA-4A8F-84EF-BD6C6820355B}
 		{BA0D409C-3CA1-45E3-BB97-56F868F54BA1} = {453EFF66-23E2-415A-9965-2EC27B969703}
 		{62EE2591-0C84-49CE-8637-21B36923D3B1} = {CA8C9B63-B4F0-423B-831F-1DC3FE0AD4B0}

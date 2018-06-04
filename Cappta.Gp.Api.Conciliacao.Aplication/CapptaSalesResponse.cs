@@ -7,7 +7,8 @@ namespace Cappta.Gp.Api.Conciliacao.Aplication
     {
         public class Get
         {
-            public static CapptaResponseSales[] FromJson(string json) => JsonConvert.DeserializeObject<CapptaResponseSales[]>(json);
+            public static ResponseSales[] FromJson(string json) => JsonConvert.DeserializeObject<ResponseSales[]>(json);
         }
+
     }
 }

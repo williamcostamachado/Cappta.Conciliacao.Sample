@@ -35,8 +35,8 @@
             this.head = new System.Windows.Forms.Panel();
             this.buttonPesquisa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButtonData = new System.Windows.Forms.RadioButton();
-            this.radioButtonNsu = new System.Windows.Forms.RadioButton();
+            this.radioButtonReceipts = new System.Windows.Forms.RadioButton();
+            this.radioButtonSales = new System.Windows.Forms.RadioButton();
             this.labelFiltro = new System.Windows.Forms.Label();
             this.comboBoxCNPJ = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -130,43 +130,41 @@
             this.buttonPesquisa.TabIndex = 2;
             this.buttonPesquisa.Text = "Pesquisar";
             this.buttonPesquisa.UseVisualStyleBackColor = true;
-            this.buttonPesquisa.Click += new System.EventHandler(this.Search);
+            this.buttonPesquisa.Click += new System.EventHandler(this.BtnSearch);
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.radioButtonData);
-            this.panel2.Controls.Add(this.radioButtonNsu);
+            this.panel2.Controls.Add(this.radioButtonReceipts);
+            this.panel2.Controls.Add(this.radioButtonSales);
             this.panel2.Controls.Add(this.labelFiltro);
             this.panel2.Location = new System.Drawing.Point(269, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(297, 58);
             this.panel2.TabIndex = 7;
             // 
-            // radioButtonData
+            // radioButtonReceipts
             // 
-            this.radioButtonData.AutoSize = true;
-            this.radioButtonData.Location = new System.Drawing.Point(161, 23);
-            this.radioButtonData.Name = "radioButtonData";
-            this.radioButtonData.Size = new System.Drawing.Size(48, 17);
-            this.radioButtonData.TabIndex = 6;
-            this.radioButtonData.Text = "Data";
-            this.radioButtonData.UseVisualStyleBackColor = true;
-            this.radioButtonData.CheckedChanged += new System.EventHandler(this.OnradioButtonData_CheckedChanged);
+            this.radioButtonReceipts.AutoSize = true;
+            this.radioButtonReceipts.Location = new System.Drawing.Point(161, 23);
+            this.radioButtonReceipts.Name = "radioButtonReceipts";
+            this.radioButtonReceipts.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonReceipts.TabIndex = 6;
+            this.radioButtonReceipts.Text = "Recibo";
+            this.radioButtonReceipts.UseVisualStyleBackColor = true;
             // 
-            // radioButtonNsu
+            // radioButtonSales
             // 
-            this.radioButtonNsu.AutoSize = true;
-            this.radioButtonNsu.Checked = true;
-            this.radioButtonNsu.Location = new System.Drawing.Point(12, 22);
-            this.radioButtonNsu.Name = "radioButtonNsu";
-            this.radioButtonNsu.Size = new System.Drawing.Size(48, 17);
-            this.radioButtonNsu.TabIndex = 5;
-            this.radioButtonNsu.TabStop = true;
-            this.radioButtonNsu.Text = "NSU";
-            this.radioButtonNsu.UseVisualStyleBackColor = true;
-            this.radioButtonNsu.CheckedChanged += new System.EventHandler(this.OnradioButtonNsu_CheckedChanged);
-            // 
+            this.radioButtonSales.AutoSize = true;
+            this.radioButtonSales.Checked = true;
+            this.radioButtonSales.Location = new System.Drawing.Point(12, 22);
+            this.radioButtonSales.Name = "radioButtonSales";
+            this.radioButtonSales.Size = new System.Drawing.Size(61, 17);
+            this.radioButtonSales.TabIndex = 5;
+            this.radioButtonSales.TabStop = true;
+            this.radioButtonSales.Text = "Vendas";
+            this.radioButtonSales.UseVisualStyleBackColor = true;
+
             // labelFiltro
             // 
             this.labelFiltro.AutoSize = true;
@@ -315,7 +313,6 @@
             this.Controls.Add(this.panel1);
             this.Name = "ConciliationForm";
             this.Text = "Conciliação Cappta ";
-            this.Load += new System.EventHandler(this.ConciliationForm_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.tabPageVendas.ResumeLayout(false);
@@ -356,8 +353,8 @@
         private System.Windows.Forms.TabPage tabPageParcelas;
         private System.Windows.Forms.Button buttonPesquisa;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButtonData;
-        private System.Windows.Forms.RadioButton radioButtonNsu;
+        private System.Windows.Forms.RadioButton radioButtonReceipts;
+        private System.Windows.Forms.RadioButton radioButtonSales;
         private System.Windows.Forms.Label labelFiltro;
         private System.Windows.Forms.TextBox Resultado;
     }

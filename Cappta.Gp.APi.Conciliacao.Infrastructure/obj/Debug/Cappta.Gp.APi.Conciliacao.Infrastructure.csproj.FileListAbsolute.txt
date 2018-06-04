@@ -7,3 +7,5 @@ C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.pdb
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\Newtonsoft.Json.dll
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\bin\Debug\Newtonsoft.Json.xml
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.csproj.CoreCompileInputs.cache
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.APi.Conciliacao.Infrastructure\obj\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.csproj.CopyComplete

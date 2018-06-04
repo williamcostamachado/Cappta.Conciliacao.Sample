@@ -5,3 +5,5 @@ C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Newtonso
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\bin\Debug\Newtonsoft.Json.xml
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.dll
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.pdb
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.Domain.Model.csproj.CoreCompileInputs.cache
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.GP.API.Conciliacao\obj\Debug\Cappta.GP.API.Conciliacao.Domain.Model.csproj.CopyComplete
