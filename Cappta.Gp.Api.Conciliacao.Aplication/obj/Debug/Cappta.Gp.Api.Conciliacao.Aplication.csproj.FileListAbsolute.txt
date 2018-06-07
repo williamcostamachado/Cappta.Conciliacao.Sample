@@ -11,3 +11,5 @@ C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Deb
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\RestSharp.xml
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\obj\Debug\Cappta.Gp.Api.Conciliacao.Aplication.csproj.CoreCompileInputs.cache
 C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\obj\Debug\Cappta.Gp.Api.Conciliacao.Aplication.csproj.CopyComplete
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.dll
+C:\GitHub\Cappta.Conciliacao.Sample\Cappta.Gp.Api.Conciliacao.Aplication\bin\Debug\Cappta.Gp.APi.Conciliacao.Infrastructure.pdb

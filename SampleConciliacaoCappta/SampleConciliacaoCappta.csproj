@@ -116,10 +116,6 @@
       <Project>{62ee2591-0c84-49ce-8637-21b36923d3b1}</Project>
       <Name>Cappta.Gp.Api.Conciliacao.Aplication</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Cappta.Gp.APi.Conciliacao.Infrastructure\Cappta.Gp.APi.Conciliacao.Infrastructure.csproj">
-      <Project>{BA0D409C-3CA1-45E3-BB97-56F868F54BA1}</Project>
-      <Name>Cappta.Gp.APi.Conciliacao.Infrastructure</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Cappta.GP.API.Conciliacao\Cappta.GP.API.Conciliacao.Domain.Model.csproj">
       <Project>{e7838a31-1ec9-4704-8195-8c493b71f204}</Project>
       <Name>Cappta.GP.API.Conciliacao.Domain.Model</Name>

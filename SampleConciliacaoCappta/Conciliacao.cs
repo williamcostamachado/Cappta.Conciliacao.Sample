@@ -1,32 +1,33 @@
-﻿using System;
+﻿using Cappta.Gp.Api.Conciliacao.Aplication;
+using System;
 using System.Windows.Forms;
-using Cappta.Gp.Api.Conciliacao.Aplication;
 
 namespace SampleConciliacaoCappta
 {
     public partial class ConciliationForm : Form
     {
-       
+        private CapptaResponse capptaResponse;
+
         public ConciliationForm()
         {
             InitializeComponent();
+            this.capptaResponse = new CapptaResponse();
         }
 
-        private void BtnSearch(object sender, EventArgs e)
+        private void ExecuteReceiptsSearch_Click(object sender, EventArgs e)
         {
-            var installmentType = radioButtonSales.Checked
-                ? InstallmentType.Sales
-                : InstallmentType.Receipts;
-
-            var filter = this.CreateFilter(installmentType);
+            var filter = this.CreateFilter(InstallmentType.Receipts);
             if (filter.IsValid() == false) { InvalidarAutenticacao(); }
 
-            var searchTransaction = new SearchTransaction();
-            
-            var response = searchTransaction.Search(filter).Execute(RequestAuthentication.Open());
+             dataGridViewSales.DataSource = capptaResponse.GetAllSales(filter); 
+        }
 
-            dataGridViewResultado.DataSource = CapptaSalesResponse.Get.FromJson(response.Content);
-            
+        private void ExecuteSalesSearch_Click(object sender, EventArgs e)
+        {
+            var filter = this.CreateFilter(InstallmentType.Sales);
+            if (filter.IsValid() == false) { InvalidarAutenticacao(); }
+
+            dataGridViewReceipts.DataSource = capptaResponse.GetAllSales(filter);
         }
 
         private TransactionFilter CreateFilter(InstallmentType installmentType)
@@ -43,11 +44,5 @@ namespace SampleConciliacaoCappta
         {
             Environment.Exit(1);
         }
-
-        private void CriarMensagemErroJanela(string mensagem)
-        {
-            MessageBox.Show(mensagem, "Erro");
-        }
-
     }
 }

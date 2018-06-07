@@ -49,9 +49,16 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RequestAuthentication.cs" />
+    <Compile Include="SearchTransaction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Cappta.GP.API.Conciliacao\Cappta.GP.API.Conciliacao.Domain.Model.csproj">
+      <Project>{E7838A31-1EC9-4704-8195-8C493B71F204}</Project>
+      <Name>Cappta.GP.API.Conciliacao.Domain.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

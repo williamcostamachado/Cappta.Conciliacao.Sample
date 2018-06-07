@@ -31,13 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPageVendas = new System.Windows.Forms.TabPage();
-            this.Resultado = new System.Windows.Forms.TextBox();
             this.head = new System.Windows.Forms.Panel();
             this.buttonPesquisa = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButtonReceipts = new System.Windows.Forms.RadioButton();
-            this.radioButtonSales = new System.Windows.Forms.RadioButton();
-            this.labelFiltro = new System.Windows.Forms.Label();
             this.comboBoxCNPJ = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelNsu = new System.Windows.Forms.Panel();
@@ -49,18 +44,36 @@
             this.textBoxDatInicio = new System.Windows.Forms.TextBox();
             this.labelPeriodo = new System.Windows.Forms.Label();
             this.labelTitulo = new System.Windows.Forms.Label();
-            this.dataGridViewResultado = new System.Windows.Forms.DataGridView();
+            this.dataGridViewSales = new System.Windows.Forms.DataGridView();
             this.tabPageParcelas = new System.Windows.Forms.TabPage();
             this.pesquisar = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnSearchSales = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dataGridViewReceipts = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPageVendas.SuspendLayout();
             this.head.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panelNsu.SuspendLayout();
             this.panelPeriodo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSales)).BeginInit();
+            this.tabPageParcelas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceipts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,46 +84,36 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1415, 701);
+            this.panel1.Size = new System.Drawing.Size(1072, 701);
             this.panel1.TabIndex = 0;
             // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabPageVendas);
             this.tabControl.Controls.Add(this.tabPageParcelas);
-            this.tabControl.Location = new System.Drawing.Point(10, 3);
+            this.tabControl.Location = new System.Drawing.Point(3, 3);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(1391, 691);
+            this.tabControl.Size = new System.Drawing.Size(1062, 691);
             this.tabControl.TabIndex = 2;
             // 
             // tabPageVendas
             // 
             this.tabPageVendas.BackColor = System.Drawing.SystemColors.Window;
             this.tabPageVendas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabPageVendas.Controls.Add(this.Resultado);
             this.tabPageVendas.Controls.Add(this.head);
-            this.tabPageVendas.Controls.Add(this.dataGridViewResultado);
+            this.tabPageVendas.Controls.Add(this.dataGridViewSales);
             this.tabPageVendas.Location = new System.Drawing.Point(4, 22);
             this.tabPageVendas.Name = "tabPageVendas";
             this.tabPageVendas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageVendas.Size = new System.Drawing.Size(1383, 665);
+            this.tabPageVendas.Size = new System.Drawing.Size(1054, 665);
             this.tabPageVendas.TabIndex = 0;
             this.tabPageVendas.Text = "Vendas";
-            // 
-            // Resultado
-            // 
-            this.Resultado.Location = new System.Drawing.Point(1039, 85);
-            this.Resultado.Multiline = true;
-            this.Resultado.Name = "Resultado";
-            this.Resultado.Size = new System.Drawing.Size(334, 570);
-            this.Resultado.TabIndex = 2;
             // 
             // head
             // 
             this.head.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.head.Controls.Add(this.buttonPesquisa);
-            this.head.Controls.Add(this.panel2);
             this.head.Controls.Add(this.comboBoxCNPJ);
             this.head.Controls.Add(this.label2);
             this.head.Controls.Add(this.panelNsu);
@@ -118,62 +121,19 @@
             this.head.Controls.Add(this.labelTitulo);
             this.head.Location = new System.Drawing.Point(6, 6);
             this.head.Name = "head";
-            this.head.Size = new System.Drawing.Size(1367, 73);
+            this.head.Size = new System.Drawing.Size(1036, 73);
             this.head.TabIndex = 0;
             // 
             // buttonPesquisa
             // 
             this.buttonPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonPesquisa.Location = new System.Drawing.Point(1239, 0);
+            this.buttonPesquisa.Location = new System.Drawing.Point(868, 2);
             this.buttonPesquisa.Name = "buttonPesquisa";
             this.buttonPesquisa.Size = new System.Drawing.Size(121, 61);
             this.buttonPesquisa.TabIndex = 2;
             this.buttonPesquisa.Text = "Pesquisar";
             this.buttonPesquisa.UseVisualStyleBackColor = true;
-            this.buttonPesquisa.Click += new System.EventHandler(this.BtnSearch);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.radioButtonReceipts);
-            this.panel2.Controls.Add(this.radioButtonSales);
-            this.panel2.Controls.Add(this.labelFiltro);
-            this.panel2.Location = new System.Drawing.Point(269, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(297, 58);
-            this.panel2.TabIndex = 7;
-            // 
-            // radioButtonReceipts
-            // 
-            this.radioButtonReceipts.AutoSize = true;
-            this.radioButtonReceipts.Location = new System.Drawing.Point(161, 23);
-            this.radioButtonReceipts.Name = "radioButtonReceipts";
-            this.radioButtonReceipts.Size = new System.Drawing.Size(59, 17);
-            this.radioButtonReceipts.TabIndex = 6;
-            this.radioButtonReceipts.Text = "Recibo";
-            this.radioButtonReceipts.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSales
-            // 
-            this.radioButtonSales.AutoSize = true;
-            this.radioButtonSales.Checked = true;
-            this.radioButtonSales.Location = new System.Drawing.Point(12, 22);
-            this.radioButtonSales.Name = "radioButtonSales";
-            this.radioButtonSales.Size = new System.Drawing.Size(61, 17);
-            this.radioButtonSales.TabIndex = 5;
-            this.radioButtonSales.TabStop = true;
-            this.radioButtonSales.Text = "Vendas";
-            this.radioButtonSales.UseVisualStyleBackColor = true;
-
-            // labelFiltro
-            // 
-            this.labelFiltro.AutoSize = true;
-            this.labelFiltro.Location = new System.Drawing.Point(3, 0);
-            this.labelFiltro.Name = "labelFiltro";
-            this.labelFiltro.Size = new System.Drawing.Size(94, 13);
-            this.labelFiltro.TabIndex = 4;
-            this.labelFiltro.Text = "Filtre sua pesquisa";
-            this.labelFiltro.UseWaitCursor = true;
+            this.buttonPesquisa.Click += new System.EventHandler(this.ExecuteReceiptsSearch_Click);
             // 
             // comboBoxCNPJ
             // 
@@ -200,7 +160,7 @@
             this.panelNsu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelNsu.Controls.Add(this.label1);
             this.panelNsu.Controls.Add(this.textBoxNsu);
-            this.panelNsu.Location = new System.Drawing.Point(665, 3);
+            this.panelNsu.Location = new System.Drawing.Point(234, 6);
             this.panelNsu.Name = "panelNsu";
             this.panelNsu.Size = new System.Drawing.Size(242, 58);
             this.panelNsu.TabIndex = 6;
@@ -228,7 +188,7 @@
             this.panelPeriodo.Controls.Add(this.label);
             this.panelPeriodo.Controls.Add(this.textBoxDatInicio);
             this.panelPeriodo.Controls.Add(this.labelPeriodo);
-            this.panelPeriodo.Location = new System.Drawing.Point(913, 3);
+            this.panelPeriodo.Location = new System.Drawing.Point(482, 6);
             this.panelPeriodo.Name = "panelPeriodo";
             this.panelPeriodo.Size = new System.Drawing.Size(320, 56);
             this.panelPeriodo.TabIndex = 3;
@@ -276,20 +236,22 @@
             this.labelTitulo.TabIndex = 0;
             this.labelTitulo.Text = "Utilize os filtros para fazer a busca";
             // 
-            // dataGridViewResultado
+            // dataGridViewSales
             // 
-            this.dataGridViewResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResultado.Location = new System.Drawing.Point(6, 85);
-            this.dataGridViewResultado.Name = "dataGridViewResultado";
-            this.dataGridViewResultado.Size = new System.Drawing.Size(1027, 570);
-            this.dataGridViewResultado.TabIndex = 1;
+            this.dataGridViewSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSales.Location = new System.Drawing.Point(1, 85);
+            this.dataGridViewSales.Name = "dataGridViewSales";
+            this.dataGridViewSales.Size = new System.Drawing.Size(1048, 570);
+            this.dataGridViewSales.TabIndex = 1;
             // 
             // tabPageParcelas
             // 
+            this.tabPageParcelas.Controls.Add(this.panel2);
+            this.tabPageParcelas.Controls.Add(this.dataGridViewReceipts);
             this.tabPageParcelas.Location = new System.Drawing.Point(4, 22);
             this.tabPageParcelas.Name = "tabPageParcelas";
             this.tabPageParcelas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageParcelas.Size = new System.Drawing.Size(1383, 665);
+            this.tabPageParcelas.Size = new System.Drawing.Size(1054, 665);
             this.tabPageParcelas.TabIndex = 1;
             this.tabPageParcelas.Text = "Parcelas e Recebimentos";
             this.tabPageParcelas.UseVisualStyleBackColor = true;
@@ -305,28 +267,167 @@
             this.pesquisar.TabIndex = 7;
             this.pesquisar.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnSearchSales);
+            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Location = new System.Drawing.Point(6, 8);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1035, 73);
+            this.panel2.TabIndex = 2;
+            // 
+            // btnSearchSales
+            // 
+            this.btnSearchSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchSales.Location = new System.Drawing.Point(868, 2);
+            this.btnSearchSales.Name = "btnSearchSales";
+            this.btnSearchSales.Size = new System.Drawing.Size(121, 61);
+            this.btnSearchSales.TabIndex = 2;
+            this.btnSearchSales.Text = "Pesquisar";
+            this.btnSearchSales.UseVisualStyleBackColor = true;
+            this.btnSearchSales.Click += new System.EventHandler(this.ExecuteSalesSearch_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "88888888888888"});
+            this.comboBox1.Location = new System.Drawing.Point(49, 23);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(179, 21);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.Text = "Escolha o CNPJ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 26);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "CNPJ";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Location = new System.Drawing.Point(234, 6);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(242, 58);
+            this.panel3.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "NSU";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(69, 20);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(155, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.textBox2);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.textBox3);
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Location = new System.Drawing.Point(482, 6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(320, 56);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(172, 21);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(131, 20);
+            this.textBox2.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(143, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(23, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Até";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(6, 21);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(131, 20);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 13);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Escolha o Periodo";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(169, 15);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Utilize os filtros para fazer a busca";
+            // 
+            // dataGridViewReceipts
+            // 
+            this.dataGridViewReceipts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReceipts.Location = new System.Drawing.Point(3, 87);
+            this.dataGridViewReceipts.Name = "dataGridViewReceipts";
+            this.dataGridViewReceipts.Size = new System.Drawing.Size(1043, 570);
+            this.dataGridViewReceipts.TabIndex = 3;
+            // 
             // ConciliationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1415, 701);
+            this.ClientSize = new System.Drawing.Size(1072, 701);
             this.Controls.Add(this.panel1);
             this.Name = "ConciliationForm";
             this.Text = "Conciliação Cappta ";
             this.panel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.tabPageVendas.ResumeLayout(false);
-            this.tabPageVendas.PerformLayout();
             this.head.ResumeLayout(false);
             this.head.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panelNsu.ResumeLayout(false);
             this.panelNsu.PerformLayout();
             this.panelPeriodo.ResumeLayout(false);
             this.panelPeriodo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResultado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSales)).EndInit();
+            this.tabPageParcelas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceipts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -345,7 +446,7 @@
         private System.Windows.Forms.TextBox textBoxDatInicio;
         private System.Windows.Forms.Label labelPeriodo;
         private System.Windows.Forms.PictureBox pesquisar;
-        private System.Windows.Forms.DataGridView dataGridViewResultado;
+        private System.Windows.Forms.DataGridView dataGridViewSales;
         private System.Windows.Forms.ComboBox comboBoxCNPJ;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl;
@@ -353,10 +454,19 @@
         private System.Windows.Forms.TabPage tabPageParcelas;
         private System.Windows.Forms.Button buttonPesquisa;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButtonReceipts;
-        private System.Windows.Forms.RadioButton radioButtonSales;
-        private System.Windows.Forms.Label labelFiltro;
-        private System.Windows.Forms.TextBox Resultado;
+        private System.Windows.Forms.Button btnSearchSales;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView dataGridViewReceipts;
     }
 }
 
