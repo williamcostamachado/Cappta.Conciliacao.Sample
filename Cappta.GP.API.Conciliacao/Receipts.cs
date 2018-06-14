@@ -2,7 +2,7 @@
 {
     using Newtonsoft.Json;
 
-    public partial class ResponseReceipts
+    public partial class Receipts
     {
         [JsonProperty("acquirer")]
         public string Acquirer { get; set; }

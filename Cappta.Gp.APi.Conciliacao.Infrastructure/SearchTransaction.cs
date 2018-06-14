@@ -1,8 +1,7 @@
-﻿
-using RestSharp;
+﻿using RestSharp;
 using SampleConciliacaoCappta;
 
-namespace Cappta.Gp.Api.Conciliacao.Aplication
+namespace Cappta.Gp.APi.Conciliacao.Infrastructure
 {
     public class SearchTransaction 
     {
@@ -20,6 +19,6 @@ namespace Cappta.Gp.Api.Conciliacao.Aplication
             var restClient = new RestClient(searchUrl);
 
             return restClient;
-        } 
+        }
     }
 }

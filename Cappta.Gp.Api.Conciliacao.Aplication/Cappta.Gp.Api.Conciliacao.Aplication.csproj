@@ -49,9 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CapptaReceiptResponses.cs" />
-    <Compile Include="CapptaResponse.cs" />
+    <Compile Include="Conciliation.cs" />
     <Compile Include="CapptaSalesResponse.cs" />
-    <Compile Include="CreateFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

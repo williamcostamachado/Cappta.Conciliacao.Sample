@@ -1,13 +1,21 @@
-﻿using Newtonsoft.Json;
+﻿using Cappta.Gp.APi.Conciliacao.Infrastructure;
+using Newtonsoft.Json;
 using QuickType;
+using SampleConciliacaoCappta;
+using System.Collections.Generic;
 
 namespace Cappta.Gp.Api.Conciliacao.Aplication
 {
-    public class CapptaReceiptResponse
+    public static class CapptaReceiptResponse
     {
-        public partial class Get
+       public static IEnumerable<Receipts> GetReceipts(TransactionFilter filter)
         {
-            public static ResponseReceipts[] FromJson(string json) => JsonConvert.DeserializeObject<ResponseReceipts[]>(json);
+            var search = new SearchTransaction();
+            var response = search.Search(filter).Execute(RequestAuthentication.Open());
+            var getReceipts = JsonConvert.DeserializeObject<Receipts[]>(response.Content);
+
+            return getReceipts;
         }
+
     }
 }

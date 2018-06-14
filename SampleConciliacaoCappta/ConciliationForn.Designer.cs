@@ -33,22 +33,20 @@
             this.tabPageVendas = new System.Windows.Forms.TabPage();
             this.head = new System.Windows.Forms.Panel();
             this.buttonPesquisa = new System.Windows.Forms.Button();
-            this.comboBoxCNPJ = new System.Windows.Forms.ComboBox();
+            this.cnpj = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelNsu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxNsu = new System.Windows.Forms.TextBox();
+            this.nsu = new System.Windows.Forms.TextBox();
             this.panelPeriodo = new System.Windows.Forms.Panel();
-            this.textBoxFinal = new System.Windows.Forms.TextBox();
+            this.finalDate = new System.Windows.Forms.TextBox();
             this.label = new System.Windows.Forms.Label();
-            this.textBoxDatInicio = new System.Windows.Forms.TextBox();
+            this.initialDate = new System.Windows.Forms.TextBox();
             this.labelPeriodo = new System.Windows.Forms.Label();
             this.labelTitulo = new System.Windows.Forms.Label();
             this.dataGridViewSales = new System.Windows.Forms.DataGridView();
             this.tabPageParcelas = new System.Windows.Forms.TabPage();
-            this.pesquisar = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSearchSales = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -61,6 +59,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridViewReceipts = new System.Windows.Forms.DataGridView();
+            this.pesquisar = new System.Windows.Forms.PictureBox();
+            this.ExecutarPesquisa = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabPageVendas.SuspendLayout();
@@ -69,11 +69,11 @@
             this.panelPeriodo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSales)).BeginInit();
             this.tabPageParcelas.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceipts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -114,7 +114,7 @@
             // 
             this.head.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.head.Controls.Add(this.buttonPesquisa);
-            this.head.Controls.Add(this.comboBoxCNPJ);
+            this.head.Controls.Add(this.cnpj);
             this.head.Controls.Add(this.label2);
             this.head.Controls.Add(this.panelNsu);
             this.head.Controls.Add(this.panelPeriodo);
@@ -133,18 +133,18 @@
             this.buttonPesquisa.TabIndex = 2;
             this.buttonPesquisa.Text = "Pesquisar";
             this.buttonPesquisa.UseVisualStyleBackColor = true;
-            this.buttonPesquisa.Click += new System.EventHandler(this.ExecuteReceiptsSearch_Click);
+            this.buttonPesquisa.Click += new System.EventHandler(this.SalesResarch);
             // 
-            // comboBoxCNPJ
+            // cnpj
             // 
-            this.comboBoxCNPJ.FormattingEnabled = true;
-            this.comboBoxCNPJ.Items.AddRange(new object[] {
+            this.cnpj.FormattingEnabled = true;
+            this.cnpj.Items.AddRange(new object[] {
             "88888888888888"});
-            this.comboBoxCNPJ.Location = new System.Drawing.Point(49, 23);
-            this.comboBoxCNPJ.Name = "comboBoxCNPJ";
-            this.comboBoxCNPJ.Size = new System.Drawing.Size(179, 21);
-            this.comboBoxCNPJ.TabIndex = 11;
-            this.comboBoxCNPJ.Text = "Escolha o CNPJ";
+            this.cnpj.Location = new System.Drawing.Point(49, 23);
+            this.cnpj.Name = "cnpj";
+            this.cnpj.Size = new System.Drawing.Size(179, 21);
+            this.cnpj.TabIndex = 11;
+            this.cnpj.Text = "Escolha o CNPJ";
             // 
             // label2
             // 
@@ -159,7 +159,7 @@
             // 
             this.panelNsu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelNsu.Controls.Add(this.label1);
-            this.panelNsu.Controls.Add(this.textBoxNsu);
+            this.panelNsu.Controls.Add(this.nsu);
             this.panelNsu.Location = new System.Drawing.Point(234, 6);
             this.panelNsu.Name = "panelNsu";
             this.panelNsu.Size = new System.Drawing.Size(242, 58);
@@ -174,31 +174,31 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "NSU";
             // 
-            // textBoxNsu
+            // nsu
             // 
-            this.textBoxNsu.Location = new System.Drawing.Point(69, 20);
-            this.textBoxNsu.Name = "textBoxNsu";
-            this.textBoxNsu.Size = new System.Drawing.Size(155, 20);
-            this.textBoxNsu.TabIndex = 0;
+            this.nsu.Location = new System.Drawing.Point(69, 20);
+            this.nsu.Name = "nsu";
+            this.nsu.Size = new System.Drawing.Size(155, 20);
+            this.nsu.TabIndex = 0;
             // 
             // panelPeriodo
             // 
             this.panelPeriodo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelPeriodo.Controls.Add(this.textBoxFinal);
+            this.panelPeriodo.Controls.Add(this.finalDate);
             this.panelPeriodo.Controls.Add(this.label);
-            this.panelPeriodo.Controls.Add(this.textBoxDatInicio);
+            this.panelPeriodo.Controls.Add(this.initialDate);
             this.panelPeriodo.Controls.Add(this.labelPeriodo);
             this.panelPeriodo.Location = new System.Drawing.Point(482, 6);
             this.panelPeriodo.Name = "panelPeriodo";
             this.panelPeriodo.Size = new System.Drawing.Size(320, 56);
             this.panelPeriodo.TabIndex = 3;
             // 
-            // textBoxFinal
+            // finalDate
             // 
-            this.textBoxFinal.Location = new System.Drawing.Point(172, 21);
-            this.textBoxFinal.Name = "textBoxFinal";
-            this.textBoxFinal.Size = new System.Drawing.Size(131, 20);
-            this.textBoxFinal.TabIndex = 4;
+            this.finalDate.Location = new System.Drawing.Point(172, 21);
+            this.finalDate.Name = "finalDate";
+            this.finalDate.Size = new System.Drawing.Size(131, 20);
+            this.finalDate.TabIndex = 4;
             // 
             // label
             // 
@@ -209,12 +209,12 @@
             this.label.TabIndex = 3;
             this.label.Text = "Até";
             // 
-            // textBoxDatInicio
+            // initialDate
             // 
-            this.textBoxDatInicio.Location = new System.Drawing.Point(6, 21);
-            this.textBoxDatInicio.Name = "textBoxDatInicio";
-            this.textBoxDatInicio.Size = new System.Drawing.Size(131, 20);
-            this.textBoxDatInicio.TabIndex = 1;
+            this.initialDate.Location = new System.Drawing.Point(6, 21);
+            this.initialDate.Name = "initialDate";
+            this.initialDate.Size = new System.Drawing.Size(131, 20);
+            this.initialDate.TabIndex = 1;
             // 
             // labelPeriodo
             // 
@@ -239,9 +239,9 @@
             // dataGridViewSales
             // 
             this.dataGridViewSales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSales.Location = new System.Drawing.Point(1, 85);
+            this.dataGridViewSales.Location = new System.Drawing.Point(1, 125);
             this.dataGridViewSales.Name = "dataGridViewSales";
-            this.dataGridViewSales.Size = new System.Drawing.Size(1048, 570);
+            this.dataGridViewSales.Size = new System.Drawing.Size(1048, 530);
             this.dataGridViewSales.TabIndex = 1;
             // 
             // tabPageParcelas
@@ -256,21 +256,10 @@
             this.tabPageParcelas.Text = "Parcelas e Recebimentos";
             this.tabPageParcelas.UseVisualStyleBackColor = true;
             // 
-            // pesquisar
-            // 
-            this.pesquisar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pesquisar.Image = global::SampleConciliacaoCappta.Properties.Resources.pesquisa;
-            this.pesquisar.Location = new System.Drawing.Point(454, 85);
-            this.pesquisar.Name = "pesquisar";
-            this.pesquisar.Size = new System.Drawing.Size(76, 55);
-            this.pesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pesquisar.TabIndex = 7;
-            this.pesquisar.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.btnSearchSales);
+            this.panel2.Controls.Add(this.ExecutarPesquisa);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.panel3);
@@ -280,17 +269,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1035, 73);
             this.panel2.TabIndex = 2;
-            // 
-            // btnSearchSales
-            // 
-            this.btnSearchSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchSales.Location = new System.Drawing.Point(868, 2);
-            this.btnSearchSales.Name = "btnSearchSales";
-            this.btnSearchSales.Size = new System.Drawing.Size(121, 61);
-            this.btnSearchSales.TabIndex = 2;
-            this.btnSearchSales.Text = "Pesquisar";
-            this.btnSearchSales.UseVisualStyleBackColor = true;
-            this.btnSearchSales.Click += new System.EventHandler(this.ExecuteSalesSearch_Click);
             // 
             // comboBox1
             // 
@@ -401,6 +379,28 @@
             this.dataGridViewReceipts.Size = new System.Drawing.Size(1043, 570);
             this.dataGridViewReceipts.TabIndex = 3;
             // 
+            // pesquisar
+            // 
+            this.pesquisar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pesquisar.Image = global::SampleConciliacaoCappta.Properties.Resources.pesquisa;
+            this.pesquisar.Location = new System.Drawing.Point(454, 85);
+            this.pesquisar.Name = "pesquisar";
+            this.pesquisar.Size = new System.Drawing.Size(76, 55);
+            this.pesquisar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pesquisar.TabIndex = 7;
+            this.pesquisar.TabStop = false;
+            // 
+            // ExecutarPesquisa
+            // 
+            this.ExecutarPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ExecutarPesquisa.Location = new System.Drawing.Point(870, 3);
+            this.ExecutarPesquisa.Name = "ExecutarPesquisa";
+            this.ExecutarPesquisa.Size = new System.Drawing.Size(121, 61);
+            this.ExecutarPesquisa.TabIndex = 12;
+            this.ExecutarPesquisa.Text = "Pesquisar";
+            this.ExecutarPesquisa.UseVisualStyleBackColor = true;
+            this.ExecutarPesquisa.Click += new System.EventHandler(this.ReceiptsSearch);
+            // 
             // ConciliationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,7 +420,6 @@
             this.panelPeriodo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSales)).EndInit();
             this.tabPageParcelas.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -428,6 +427,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceipts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pesquisar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -439,22 +439,21 @@
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.Panel panelNsu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBoxNsu;
+        private System.Windows.Forms.TextBox nsu;
         private System.Windows.Forms.Panel panelPeriodo;
-        private System.Windows.Forms.TextBox textBoxFinal;
+        private System.Windows.Forms.TextBox finalDate;
         private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox textBoxDatInicio;
+        private System.Windows.Forms.TextBox initialDate;
         private System.Windows.Forms.Label labelPeriodo;
         private System.Windows.Forms.PictureBox pesquisar;
         private System.Windows.Forms.DataGridView dataGridViewSales;
-        private System.Windows.Forms.ComboBox comboBoxCNPJ;
+        private System.Windows.Forms.ComboBox cnpj;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPageVendas;
         private System.Windows.Forms.TabPage tabPageParcelas;
         private System.Windows.Forms.Button buttonPesquisa;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnSearchSales;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
@@ -467,6 +466,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridView dataGridViewReceipts;
+        private System.Windows.Forms.Button ExecutarPesquisa;
     }
 }
 

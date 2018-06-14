@@ -43,8 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ResponseReceipts.cs" />
-    <Compile Include="ResponseSales.cs" />
+    <Compile Include="Receipts.cs" />
+    <Compile Include="Sales.cs" />
     <Compile Include="InstallmentType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TransactionFilter.cs" />
